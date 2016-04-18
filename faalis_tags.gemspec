@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency 'faalis', '~> 2'
-  s.add_dependency 'acts_as_tagable_with_threading'
+  s.add_dependency 'acts-as-taggable-on', '~> 3.4'
 
   s.add_development_dependency 'sqlite3'
 end
