@@ -1,4 +1,4 @@
-class Faalis::Comments::CommentPolicy < ApplicationPolicy
+class Faalis::Tags::TagPolicy < ApplicationPolicy
   class Scope < Scope
     def resolve
       scope

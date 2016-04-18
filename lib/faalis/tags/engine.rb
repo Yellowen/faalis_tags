@@ -1,7 +1,7 @@
 module Faalis
-  module Comments
+  module Tags
     class Engine < ::Rails::Engine
-      isolate_namespace Faalis::Comments
+      isolate_namespace Faalis::Tags
 
       engine_name 'faalis_tags'
     end

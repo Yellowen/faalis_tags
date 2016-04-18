@@ -1,4 +1,4 @@
-Faalis::Comments::Engine.routes.draw do
+Faalis::Tags::Engine.routes.draw do
   in_dashboard do
     resources :tags
   end

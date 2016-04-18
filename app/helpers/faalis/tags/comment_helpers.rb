@@ -1,2 +1,2 @@
-class Faalis::Comments::CommentHelper
+class Faalis::Tags::TagHelper
 end

@@ -1,4 +1,4 @@
-class ActsAsCommentableWithThreadingMigration < ActiveRecord::Migration
+class ActsAsTagableWithThreadingMigration < ActiveRecord::Migration
   def self.up
     create_table :faalis_tags, :force => true do |t|
       t.integer :tagable_id

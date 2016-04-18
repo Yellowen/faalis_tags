@@ -1,5 +1,5 @@
-module Faalis::Comments
-  class Comment < ActiveRecord::Base
+module Faalis::Tags
+  class Tag < ActiveRecord::Base
 
     self.table_name = 'faalis_tags'
     acts_as_nested_set scope: [:tagable_id, :tagable_type]
@@ -13,7 +13,7 @@ module Faalis::Comments
 
     belongs_to :tagable, polymorphic: true
 
-    # NOTE: Comments belong to a user
+    # NOTE: Tags belong to a user
     belongs_to :user, class_name: 'Faalis::User'
 
     # Helper class method that allows you to build a tag
