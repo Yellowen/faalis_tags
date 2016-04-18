@@ -3,7 +3,7 @@ module Faalis
     class Engine < ::Rails::Engine
       isolate_namespace Faalis::Comments
 
-      engine_name 'faalis_comments'
+      engine_name 'faalis_tags'
     end
   end
 end

@@ -1,1 +1,1 @@
-require 'faalis/comments'
+require 'faalis/tags'

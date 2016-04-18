@@ -1,8 +1,8 @@
 class ActsAsCommentableWithThreadingMigration < ActiveRecord::Migration
   def self.up
-    create_table :faalis_comments, :force => true do |t|
-      t.integer :commentable_id
-      t.string :commentable_type
+    create_table :faalis_tags, :force => true do |t|
+      t.integer :tagable_id
+      t.string :tagable_type
       t.string :title
       t.text :body
       t.string :subject
@@ -11,11 +11,11 @@ class ActsAsCommentableWithThreadingMigration < ActiveRecord::Migration
       t.timestamps
     end
 
-    add_index :faalis_comments, :user_id
-    add_index :faalis_comments, [:commentable_id, :commentable_type]
+    add_index :faalis_tags, :user_id
+    add_index :faalis_tags, [:tagable_id, :tagable_type]
   end
 
   def self.down
-    drop_table :faalis_comments
+    drop_table :faalis_tags
   end
 end
