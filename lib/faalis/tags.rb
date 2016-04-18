@@ -1,6 +1,5 @@
 require 'faalis'
-require 'awesome_nested_set'
-require 'acts_as_tagable_with_threading'
+require 'acts-as-taggable-on'
 
 module Faalis
   module Tags
